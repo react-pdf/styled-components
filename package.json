@@ -6,7 +6,8 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "rollup -c",
-    "watch": "rollup -c -w"
+    "watch": "rollup -c -w",
+    "prepublish": "npm run build"
   },
   "devDependencies": {
     "babel-cli": "^6.22.2",
@@ -34,5 +35,8 @@
   },
   "dependencies": {
     "styled-components": "^3.3.3"
-  }
+  },
+  "files": [
+    "dist"
+  ]
 }
