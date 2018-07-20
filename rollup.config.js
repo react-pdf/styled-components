@@ -4,6 +4,7 @@ import json from 'rollup-plugin-json'
 import nodeResolve from 'rollup-plugin-node-resolve';
 import babel from 'rollup-plugin-babel';
 import sourceMaps from 'rollup-plugin-sourcemaps';
+import pckg from 'styled-components/package.json';
 
 const cjs = {
   exports: 'named',
@@ -42,7 +43,10 @@ const configBase = {
   output: getCJS({ file: './dist/index.js' }),
   plugins: commonPlugins,
   sourcemap: true,
-  external: ["react", "@react-pdf/react-pdf"]
+  external: ["@react-pdf/react-pdf"].concat(
+    Object.keys(pckg.dependencies),
+    Object.keys(pckg.peerDependencies)
+  )
 };
 
 export default [
