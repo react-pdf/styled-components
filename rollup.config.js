@@ -43,7 +43,7 @@ const configBase = {
   output: getCJS({ file: './dist/index.js' }),
   plugins: commonPlugins,
   sourcemap: true,
-  external: ["@react-pdf/react-pdf"].concat(
+  external: ['@react-pdf/renderer'].concat(
     Object.keys(pckg.dependencies),
     Object.keys(pckg.peerDependencies)
   )

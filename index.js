@@ -1,4 +1,4 @@
-import ReactPDF from '@react-pdf/react-pdf'
+import ReactPDF from '@react-pdf/renderer'
 
 import _InlineStyle from 'styled-components/src/models/InlineStyle'
 import _StyledNativeComponent from 'styled-components/src/models/StyledNativeComponent'
