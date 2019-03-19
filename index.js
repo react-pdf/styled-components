@@ -1,12 +1,12 @@
 import ReactPDF from '@react-pdf/renderer'
 
-import _InlineStyle from 'styled-components/lib/models/InlineStyle'
-import _StyledNativeComponent from 'styled-components/lib/models/StyledNativeComponent'
-import _constructWithOptions from 'styled-components/lib/constructors/constructWithOptions'
-import css from 'styled-components/lib/constructors/css'
-import ThemeProvider from 'styled-components/lib/models/ThemeProvider'
-import withTheme from 'styled-components/lib/hoc/withTheme'
-import isStyledComponent from 'styled-components/lib/utils/isStyledComponent'
+import _InlineStyle from 'styled-components/src/models/InlineStyle'
+import _StyledNativeComponent from 'styled-components/src/models/StyledNativeComponent'
+import _constructWithOptions from 'styled-components/src/constructors/constructWithOptions'
+import css from 'styled-components/src/constructors/css'
+import ThemeProvider from 'styled-components/src/models/ThemeProvider'
+import withTheme from 'styled-components/src/hoc/withTheme'
+import isStyledComponent from 'styled-components/src/utils/isStyledComponent'
 
 const constructWithOptions = _constructWithOptions(css)
 const InlineStyle = _InlineStyle(ReactPDF.StyleSheet)
