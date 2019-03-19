@@ -36,7 +36,7 @@
     "rollup-plugin-uglify": "^3.0.0"
   },
   "dependencies": {
-    "styled-components": "^3.3.3"
+    "styled-components": "^3.4.10"
   },
   "peerDependencies": {
     "@react-pdf/renderer": "^1.0.0"
