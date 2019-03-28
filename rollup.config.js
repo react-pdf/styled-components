@@ -34,7 +34,7 @@ const commonPlugins = [
     },
   }),
   babel({
-    plugins: ['external-helpers'],
+    plugins: ['external-helpers', 'preval'],
   }),
 ];
 
