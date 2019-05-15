@@ -15,7 +15,7 @@ yarn add @react-pdf/styled-components
 `@react-pdf/styled-components` follows the same styled-components API
 
 ```jsx
-import styled from ''@react-pdf/styled-components';
+import styled from '@react-pdf/styled-components';
 
 const Heading = styled.Text`
   margin: 10px;
